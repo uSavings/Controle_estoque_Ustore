@@ -6,10 +6,9 @@ export const AppDataSource = new DataSource({
   type: 'mysql',
   host: process.env.DATABASE_HOST || 'localhost',
   port: parseInt(process.env.DATABASE_PORT || '3306'),
-  username: process.env.DATABASE_USER || 'root',
-  password: process.env.DATABASE_PASSWORD || 'nautico#20',
+  username: process.env.DATABASE_USER || 'user',
+  password: process.env.DATABASE_PASSWORD || 'userpassword',
   database: process.env.DATABASE_NAME || 'product',
   entities: [Product],
-  migrations: ['src/migration/*.ts'], 
-  synchronize: false,
+  synchronize: true,
 });
