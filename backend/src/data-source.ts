@@ -1,5 +1,6 @@
+import 'reflect-metadata';
 import { DataSource } from 'typeorm';
-import { Produto } from './entities/Produto';
+import { Product } from './entities/Product';
 
 export const AppDataSource = new DataSource({
   type: 'mysql',
@@ -7,7 +8,8 @@ export const AppDataSource = new DataSource({
   port: parseInt(process.env.DATABASE_PORT || '3306'),
   username: process.env.DATABASE_USER || 'root',
   password: process.env.DATABASE_PASSWORD || 'nautico#20',
-  database: process.env.DATABASE_NAME || 'produtos',
-  entities: [Produto],
-  synchronize: true,
+  database: process.env.DATABASE_NAME || 'product',
+  entities: [Product],
+  migrations: ['src/migration/*.ts'], 
+  synchronize: false,
 });

@@ -1,15 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-add-produtos',
   templateUrl: './add-produtos.component.html',
   styleUrls: ['./add-produtos.component.css']
 })
-export class AddProdutosComponent implements OnInit {
+export class AddProdutosComponent {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
-  ngOnInit(): void {
+  redirectToForm() {
+    this.router.navigate(['/form-produto']);
   }
-
 }

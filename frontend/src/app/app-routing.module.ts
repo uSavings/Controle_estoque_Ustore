@@ -1,9 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AddProdutosComponent } from './componentes/Vprincipal/add-produtos/add-produtos.component';
+import { ViewComponent } from './componentes/Vprincipal/view.component';
+import { FormProdutoComponent } from './componentes/Vprincipal/formularios/add-formulario/form-produto.component';
 
 const routes: Routes = [
-  { path: 'adicionar-produto', component: AddProdutosComponent },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: 'home', component: ViewComponent },
+  { path: 'form-produto', component: FormProdutoComponent },
 ];
 
 @NgModule({
