@@ -3,7 +3,6 @@ import { isFutureDate } from '../validators/isFutureDate';
 
 
 const validateProduct = (req: Request, res: Response, next: NextFunction) => {
-    console.log('Passou aqui')
 
     const { expirationDate } = req.body;
 
