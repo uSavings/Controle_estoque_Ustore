@@ -40,6 +40,16 @@ services:
       DATABASE_NAME: product
     networks:
       - mysql-network
+##  ui:
+##    build:
+ ##     context: ./frontend
+ ##     dockerfile: Dockerfile
+##    container_name: angular-app
+ ##   depends_on:
+##mysql:
+ ##       condition: service_healthy
+ ##   ports:
+##- '4200:80'
 
 volumes:
   mysql-data:
