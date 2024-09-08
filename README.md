@@ -21,7 +21,31 @@ O projeto de controle de estoque utiliza Docker e Docker Compose para gerenciar 
 
 3.2 Para rodar o backend e o banco de dados Mysql, é necessário abrir um terminal no diretório raiz(projeto_ustore) e rodar o comando 'docker-compose up --build'.
 
-Após essas instruções, o projeto vai estar rodando e vai aparecer com essa interface abaixo:
+Após essas instruções, o projeto vai subir na porta http://localhost:4200/ e estará rodando com essa interface abaixo:
 
 ![Captura de Tela (152)](https://github.com/user-attachments/assets/4c55c2c5-9e55-4423-862b-654e08b9808b)
+
+Para Adcionar um produto, basta acionar o botão na parte superior direita da tela e informar os dados, como abaixo:
+
+![Captura de Tela (153)](https://github.com/user-attachments/assets/6cd4188e-549c-439a-b5eb-b9c7d1410d6a)
+
+Para editar um registro, basta clicar no botão editar como mostrado na imagem abaixo:
+![Captura de Tela (155)](https://github.com/user-attachments/assets/b8c1d93e-d56a-4cb6-b946-e96031b6306d)
+
+Para remover um registro, basta clicar no botão de remover e confirmar dando ok no alerta que surge na tela:
+![Captura de Tela (156)](https://github.com/user-attachments/assets/c053ccbe-f577-4c66-89bb-536b6354284b)
+
+Se você tentar adicionar ou editar um produto e esclher uma data que for antetior a data vigente, o sistema não vai deixar e vai estourar um erro na tela:
+![Captura de Tela (154)](https://github.com/user-attachments/assets/548dd005-6d34-4cf7-b033-1a5a8277dc6e).
+
+## 4. Considerações Finais
+
+Esta documentação fornece uma visão geral de como configurar e executar um projeto de controle de estoque utilizando Docker Compose para orquestrar os serviços de backend e banco de dados e executando o frontend localmente.
+
+
+
+
+
+
+
 
