@@ -21,6 +21,8 @@ O projeto de controle de estoque utiliza Docker e Docker Compose para gerenciar 
 
 3.2 Para rodar o backend e o banco de dados Mysql, é necessário abrir um terminal no diretório raiz(projeto_ustore) e rodar o comando 'docker-compose up --build'.
 
+OBS: se for rodar no windows, é preciso que o docker desktop esteja em estado de execução.
+
 Após essas instruções, o projeto vai subir na porta http://localhost:4200/ e estará rodando com essa interface abaixo:
 
 ![Captura de Tela (152)](https://github.com/user-attachments/assets/4c55c2c5-9e55-4423-862b-654e08b9808b)
